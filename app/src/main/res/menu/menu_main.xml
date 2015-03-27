@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- http://developer.android.com/guide/topics/resources/menu-resource.html -->
+	<item
+		android:id="@+id/action_moreInfoID"
+		android:orderInCategory="90"
+		android:title="@string/action_moreInfo"/>
+	<item
+		android:id="@+id/action_creditsID"
+		android:orderInCategory="100"
+		android:title="@string/action_credits" />
+	<item
+		android:id="@+id/action_exitID"
+		android:orderInCategory="100"
+		android:title="@string/action_exit"/>
+</menu>

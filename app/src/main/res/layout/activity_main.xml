@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	 android:id="@+id/root"
+	 android:layout_width="match_parent"
+	 android:layout_height="match_parent"
+	 android:background="@color/bgDefault"
+	 android:padding="5dp"
+	 android:stretchColumns="*">
+
+	<TableRow
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/bgDefault"
+		android:layout_weight="1">
+
+		<TableLayout
+			android:layout_weight="3"
+			android:layout_width="0dp"
+			android:layout_height="match_parent">
+			<TableRow
+				android:id="@+id/boxTopleftID"
+				style="@style/box"
+				android:layout_weight="1"
+				android:background="@color/boxTopleft2">
+				<Button
+					android:id="@+id/buttonTopleftID"
+					style="@style/button"
+					android:background="@color/boxTopleft1" />
+			</TableRow>
+			<TableRow
+				android:id="@+id/boxBottomLeftID"
+				style="@style/box"
+				android:background="@color/boxBottomLeft2"
+				android:layout_weight="1">
+				<Button
+					android:id="@+id/buttonBottomleftID"
+					style="@style/button"
+					android:background="@color/boxBottomLeft1" />
+			</TableRow>
+		</TableLayout>
+		<TableLayout
+			android:layout_weight="5"
+			android:layout_width="0dp"
+			android:layout_height="match_parent">
+			<TableRow
+				android:id="@+id/boxTopRightID"
+				style="@style/box"
+				android:background="@color/boxTopRight2"
+				android:layout_weight="1">
+				<Button
+					android:id="@+id/buttonTopRightID"
+					style="@style/button"
+					android:background="@color/boxTopRight1" />
+			</TableRow>
+			<TableRow
+				android:id="@+id/boxCenterRightID"
+				style="@style/box"
+				android:background="@color/boxCenterRight2"
+				android:layout_weight="1">
+				<Button
+					android:id="@+id/buttonCenterRightID"
+					style="@style/button"
+					android:background="@color/boxCenterRight1" />
+			</TableRow>
+			<TableRow
+				android:id="@+id/boxBottomRightID"
+				style="@style/box"
+				android:background="@color/boxBottomRight2"
+				android:layout_weight="1">
+				<Button
+					android:id="@+id/buttonBottomRightID"
+					style="@style/button"
+					android:background="@color/boxBottomRight1" />
+			</TableRow>
+		</TableLayout>
+	</TableRow>
+
+	<SeekBar
+		android:id="@+id/colorControlID"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		/>
+</TableLayout>
