@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	android:orientation="vertical"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="#ff414db9">
+
+	<TextView
+		android:id="@+id/textView"
+		style="@style/menuText"
+		android:text="@string/action_moreInfo1"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentEnd="true" />
+	<TextView
+		android:id="@+id/textView2"
+		style="@style/menuText"
+		android:text="@string/action_moreInfo2"
+		android:layout_below="@+id/textView"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentEnd="true" />
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/textView2"
+		android:layout_alignLeft="@+id/textView2"
+		android:layout_alignStart="@+id/textView2"
+		android:gravity="center_horizontal">
+
+		<Button
+			android:id="@+id/action_buttonSubmitID"
+			style="@style/menuButton"
+			android:text="@string/action_buttonSubmit"
+			/>
+		<Button
+			android:id="@+id/action_buttonCancelID"
+			style="@style/menuButton"
+			android:text="@string/action_buttonCancel"
+			/>
+	</LinearLayout>
+
+</RelativeLayout>

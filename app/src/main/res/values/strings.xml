@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Modern Art UI</string>
+
+    <string name="action_moreInfo">More Information</string>
+	<string name="action_credits">About</string>
+	<string name="action_exit">Exit</string>
+
+	<string name="action_moreInfo1">Inspired by the works of artists such as Piet Mondrian and Benn Nicholson.</string>
+	<string name="action_moreInfo2">Click below to learn more!</string>
+	<string name="action_buttonSubmit">Visit MOMA</string>
+	<string name="action_buttonCancel">Not Now</string>
+
+	<string name="action_creditsNames">Written by Thomas Nguyen</string>
+</resources>

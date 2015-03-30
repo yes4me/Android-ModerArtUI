@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="bgDefault">#000000</color>
+	<color name="bgDefault2">#414DB9</color>
+
+	<color name="boxTopleft1">#B3C2B6</color>
+	<color name="boxTopRight1">#EC670B</color>
+	<color name="boxCenterRight1">#FFFFFF</color>
+	<color name="boxBottomLeft1">#FF9999</color>
+	<color name="boxBottomRight1">#708398</color>
+
+	<color name="boxTopleft2">#C670B4</color>
+	<color name="boxTopRight2">#FE7C00</color>
+	<color name="boxCenterRight2">#FFFFFF</color>
+	<color name="boxBottomLeft2">#FDAD94</color>
+	<color name="boxBottomRight2">#839895</color>
+</resources>
