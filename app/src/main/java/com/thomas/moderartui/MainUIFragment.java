@@ -5,19 +5,16 @@ Purpose: Main fragment
 
 package com.thomas.moderartui;
 
-import android.app.ActionBar;
-import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.SeekBar;
 
-import com.thomas.moderartui.Memory;
+import com.thomas.moderartui.lib.Memory;
 
 /**
  * Created by Thomas on 03/30/2015.

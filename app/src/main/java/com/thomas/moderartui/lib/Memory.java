@@ -3,7 +3,7 @@ Created by Thomas on 03/30/2015.
 Purpose: Save preference even if the software turned off
 ================================================================================================= */
 
-package com.thomas.moderartui;
+package com.thomas.moderartui.lib;
 
 import android.app.Activity;
 import android.content.Context;

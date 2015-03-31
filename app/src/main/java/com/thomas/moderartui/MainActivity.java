@@ -9,7 +9,6 @@ package com.thomas.moderartui;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -17,11 +16,9 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.ViewConfiguration;
-import android.widget.Button;
-import android.widget.SeekBar;
-import android.widget.SeekBar.OnSeekBarChangeListener;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import com.thomas.moderartui.lib.L;
 
 
 public class MainActivity extends Activity {
@@ -72,7 +69,8 @@ public class MainActivity extends Activity {
 				startActivity(intent);
 				break;
 			case R.id.action_creditsID:
-				Toast.makeText(getApplicationContext(), R.string.action_creditsNames, Toast.LENGTH_SHORT).show();
+				//R.string.* is a reference to an int in R.java that points to your actual String.
+				L.t(getApplicationContext(), getString(R.string.action_creditsNames) );
 				break;
 			case R.id.action_exitID:
 				finish();			//close activity
