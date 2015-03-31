@@ -21,6 +21,7 @@ import android.widget.SeekBar;
  * Created by Thomas on 03/30/2015.
  */
 public class MainUIFragment extends Fragment {
+	private final static String TAG = "ModerArtUI";
 	private Context context;
 	private Button buttonTopleft		= null;
 	private Button buttonBottomleft		= null;

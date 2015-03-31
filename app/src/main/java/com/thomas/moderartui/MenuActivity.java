@@ -16,6 +16,8 @@ import android.widget.Toast;
  * Created by Thomas on 03/14/2015.
  */
 public class MenuActivity extends Activity implements View.OnClickListener {
+	private final static String TAG = "ModerArtUI";
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
