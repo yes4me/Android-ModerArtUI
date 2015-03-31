@@ -1,3 +1,8 @@
+/* =================================================================================================
+Created by Thomas on 03/30/2015.
+Purpose: Save preference even if the software turned off
+================================================================================================= */
+
 package com.thomas.moderartui;
 
 import android.app.Activity;
@@ -6,13 +11,12 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
-/**
- * Created by Thomas on 03/30/2015.
- */
-public class Memory extends Activity {
-	private final static String TAG = "ModerArtUI";
 
-	public static boolean setPreference_int(String key, int value, Context context) {
+public abstract class Memory extends Activity {
+	private final static String TAG = "ModerArtUI";
+	private Context context;
+
+	public static boolean setPreference(String key, int value, Context context) {
 		try {
 			SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
 			SharedPreferences.Editor editor = preferences.edit();
@@ -23,5 +27,14 @@ public class Memory extends Activity {
 			Log.e(TAG, "memory > setPreference_boolean() > FAILED:" + key + "/" + value);
 		}
 		return false;
+	}
+	public static int getPreference_int(String key, Context context) {
+		try {
+			SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
+			return preferences.getInt(key, 0);
+		} catch (Exception name) {
+			Log.e(TAG, "memory > getPreference_int() > FAILED:" + key);
+		}
+		return 0;
 	}
 }

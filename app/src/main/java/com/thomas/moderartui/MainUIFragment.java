@@ -17,6 +17,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.SeekBar;
 
+import com.thomas.moderartui.Memory;
+
 /**
  * Created by Thomas on 03/30/2015.
  */
@@ -35,6 +37,7 @@ public class MainUIFragment extends Fragment {
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+		super.onCreateView(inflater, container, savedInstanceState);
 		context = container.getContext();
 		View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
@@ -66,18 +69,22 @@ public class MainUIFragment extends Fragment {
 			public void onStopTrackingTouch(SeekBar seekBar) {}
 		});
 
-		if( savedInstanceState != null ){
-			progressValue = savedInstanceState.getInt(PROGRESS_VALUE);
-			ColorTransform(progressValue);
-		}
-
 		return rootView;
 	}
 
 	@Override
-	public void onSaveInstanceState(Bundle outState) {
-		super.onSaveInstanceState(outState);
-		outState.putInt (PROGRESS_VALUE, progressValue);
+	public void onActivityCreated(Bundle savedInstanceState) {
+		super.onActivityCreated(savedInstanceState);
+
+		progressValue = Memory.getPreference_int(PROGRESS_VALUE, context);
+		ColorTransform(progressValue);
+		colorsSeekBar.setProgress(progressValue);
+	}
+
+	@Override
+	public void onPause() {
+		super.onPause();
+		Memory.setPreference(PROGRESS_VALUE, progressValue, context);
 	}
 
 	// =============================================================================================
